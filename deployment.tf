@@ -3,7 +3,7 @@ resource "kubernetes_daemonset" "exporter" {
     metadata {
 
         name      = "node-exporter"
-        namespace = "monitoring"
+        namespace = "kube-system"
 
         labels = {
 

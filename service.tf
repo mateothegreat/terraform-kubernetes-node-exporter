@@ -3,7 +3,7 @@ resource "kubernetes_service" "exporter" {
     metadata {
 
         name      = "node-exporter"
-        namespace = "monitoring"
+        namespace = "kube-system"
 
     }
 
